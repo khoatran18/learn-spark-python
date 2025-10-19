@@ -1,0 +1,105 @@
+# ============================================
+# Python general
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# ============================================
+# Virtual environments
+# ============================================
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# ============================================
+# Distribution / packaging
+# ============================================
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ============================================
+# PyInstaller
+# ============================================
+# Usually these files are written by a python script from a template
+# before PyInstaller builds the exe, so as to inject date/other infos
+*.manifest
+*.spec
+
+# ============================================
+# Installer logs
+# ============================================
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ============================================
+# Unit test / coverage reports
+# ============================================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ============================================
+# Jupyter Notebook
+# ============================================
+.ipynb_checkpoints
+
+# ============================================
+# VS Code / PyCharm / JetBrains
+# ============================================
+.vscode/
+.idea/
+
+# ============================================
+# Environments / secrets
+# ============================================
+*.env
+*.env.*
+.envrc
+.secret
+secrets.json
+
+# ============================================
+# Logs
+# ============================================
+*.log
+
+# ============================================
+# Django / Flask specific (if applicable)
+# ============================================
+*.sqlite3
+db.sqlite3
+instance/
+.webassets-cache
+
+# ============================================
+# macOS / Windows / Linux OS junk files
+# ============================================
+.DS_Store
+Thumbs.db
