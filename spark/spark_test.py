@@ -3,7 +3,21 @@ from datetime import datetime, date
 
 print("Start")
 
-spark = SparkSession.builder.getOrCreate()
+spark = (
+    SparkSession.builder
+    .appName("PandasToSparkTest")
+    .master("local[*]")  # dùng toàn bộ CPU
+    .config("spark.driver.bindAddress", "127.0.0.1")
+    .config("spark.driver.host", "127.0.0.1")
+    .config("spark.python.worker.reuse", "false")   # tránh lỗi worker treo
+    .config("spark.network.timeout", "300s")
+    .config("spark.executor.heartbeatInterval", "60s")
+    .config("spark.sql.execution.arrow.pyspark.enabled", "true")
+    .getOrCreate()
+)
+
+spark.sparkContext.setLogLevel("ERROR")
+spark.conf.set("spark.sql.repl.eagerEval.enable", True)
 
 print("Created successfully")
 
