@@ -1,0 +1,5 @@
+echo -e "AIRFLOW_UID=$(id -u)" > .env
+
+export AIRFLOW_HOME=$(pwd)/airflow/local
+
+airflow standalone
