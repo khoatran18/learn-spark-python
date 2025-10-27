@@ -6,3 +6,5 @@ numpy
 pandas
 pyarrow
 confluent-kafka
+apache-airflow==3.0.3 --constraint https://raw.githubusercontent.com/apache/airflow/constraints-3.0.3/constraints-3.12.txt
+apache-airflow[celery]
