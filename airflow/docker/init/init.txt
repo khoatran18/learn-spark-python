@@ -1,4 +1,5 @@
 docker compose -f air_flow_compose.yml --profile flower up -d
+docker compose -f air_flow_compose.yml --profile flower down -v
 
 username: airflow
 password: airflow
